@@ -1,0 +1,594 @@
+{
+	"info": {
+		"_postman_id": "4ad4c4ca-4513-4a9c-833c-ee151c12e259",
+		"name": "Capstone_Pinterest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24646160"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"email\":\"huaaa@gmail.com\",\r\n    \"ho_ten\":\"Khoi\",\r\n    \"tuoi\":22,\r\n    \"mat_khau\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/user/sign-up",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"email\":\"hu@gmail.com\",\r\n    \"mat_khau\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/user/login",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZnVsbF9uYW1lIjoidGVzdGRkMiIsImVtYWlsIjoidGVzdGRkZGQyZGZkZmRmZGZAZ21haWwuY29tIiwicGFzc193b3JkIjoiJDJiJDEwJC5vTHNzV2xoWWhIWVE2MVNhakFsYmV6R2IuMlNLVVh0cG5ZanJuTFQzd2p0NVFOZDM4Tkx1IiwiaWF0IjoxNjgxNDc1OTU5LCJleHAiOjE2ODE0NzYyNTl9.Oj7azgZkjpr7YhiZnH-xzV_hGGrmZ7vNlGcjK2jdHTI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/home/get-image",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"home",
+						"get-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZnVsbF9uYW1lIjoidGVzdGRkMiIsImVtYWlsIjoidGVzdGRkZGQyZGZkZmRmZGZAZ21haWwuY29tIiwicGFzc193b3JkIjoiJDJiJDEwJC5vTHNzV2xoWWhIWVE2MVNhakFsYmV6R2IuMlNLVVh0cG5ZanJuTFQzd2p0NVFOZDM4Tkx1IiwiaWF0IjoxNjgxNDc1OTU5LCJleHAiOjE2ODE0NzYyNTl9.Oj7azgZkjpr7YhiZnH-xzV_hGGrmZ7vNlGcjK2jdHTI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/home/get-image-search/anh",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"home",
+						"get-image-search",
+						"anh"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Image Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZnVsbF9uYW1lIjoidGVzdGRkMiIsImVtYWlsIjoidGVzdGRkZGQyZGZkZmRmZGZAZ21haWwuY29tIiwicGFzc193b3JkIjoiJDJiJDEwJC5vTHNzV2xoWWhIWVE2MVNhakFsYmV6R2IuMlNLVVh0cG5ZanJuTFQzd2p0NVFOZDM4Tkx1IiwiaWF0IjoxNjgxNDc1OTU5LCJleHAiOjE2ODE0NzYyNTl9.Oj7azgZkjpr7YhiZnH-xzV_hGGrmZ7vNlGcjK2jdHTI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/detail/get-image-info/9",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"detail",
+						"get-image-info",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Comment Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxOSwiZnVsbF9uYW1lIjoidGVzdGRkMiIsImVtYWlsIjoidGVzdGRkZGQyZGZkZmRmZGZAZ21haWwuY29tIiwicGFzc193b3JkIjoiJDJiJDEwJC5vTHNzV2xoWWhIWVE2MVNhakFsYmV6R2IuMlNLVVh0cG5ZanJuTFQzd2p0NVFOZDM4Tkx1IiwiaWF0IjoxNjgxNDc1OTU5LCJleHAiOjE2ODE0NzYyNTl9.Oj7azgZkjpr7YhiZnH-xzV_hGGrmZ7vNlGcjK2jdHTI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/detail/get-comment-info/9",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"detail",
+						"get-comment-info",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Is Img Saved",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzkyOTMsImV4cCI6MTcxNTg3NTI5M30.O8Znxj9VcUogu9ow9aNG1pViVMt3HCwyascFTceXna4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/detail/is-img-saved?nguoi_dung_id=5&hinh_id=9",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"detail",
+						"is-img-saved"
+					],
+					"query": [
+						{
+							"key": "nguoi_dung_id",
+							"value": "5"
+						},
+						{
+							"key": "hinh_id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzkyOTMsImV4cCI6MTcxNTg3NTI5M30.O8Znxj9VcUogu9ow9aNG1pViVMt3HCwyascFTceXna4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"nguoi_dung_id\":5,\r\n    \"hinh_id\":9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/detail/save-image",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"detail",
+						"save-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzkyOTMsImV4cCI6MTcxNTg3NTI5M30.O8Znxj9VcUogu9ow9aNG1pViVMt3HCwyascFTceXna4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"nguoi_dung_id\":5,\r\n    \"hinh_id\":9,\r\n    \"noi_dung\":\"3213125\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/detail/post-comment",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"detail",
+						"post-comment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Info User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzc5MzcsImV4cCI6MTY4NDQyNDMzN30.WE_T8brADNfORPH5jWbKVVTiMRNIRgWvW_w5j2vz-ns",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/manage/get-info-user/5",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"get-info-user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Img Saved",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzgzNjAsImV4cCI6MTcxNTg3NDM2MH0.P90wnrudOwbQeLyqZImY-sBzDP6FFiLHy3gjNno7oVg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/manage/get-img-saved/5",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"get-img-saved",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Img Created",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzg1NzksImV4cCI6MTcxNTg3NDU3OX0.6pMnE2zPiqKlTGDbqnCDY76HtuMP8T_gAtCxGfkhMxY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/api/manage/get-img-created/4",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"get-img-created",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Img",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzg1NzksImV4cCI6MTcxNTg3NDU3OX0.6pMnE2zPiqKlTGDbqnCDY76HtuMP8T_gAtCxGfkhMxY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{domain}}/api/manage/delete-img/7",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"manage",
+						"delete-img",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Img",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzkyOTMsImV4cCI6MTcxNTg3NTI5M30.O8Znxj9VcUogu9ow9aNG1pViVMt3HCwyascFTceXna4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/ADMIN/Desktop/Dragon-Ball.jpg"
+						},
+						{
+							"key": "ten_hinh",
+							"value": "ảnh 1",
+							"type": "text"
+						},
+						{
+							"key": "mo_ta",
+							"value": "đây là mô tả",
+							"type": "text"
+						},
+						{
+							"key": "nguoi_dung_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/api/upload/upload-img",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"upload",
+						"upload-img"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuZ3VvaV9kdW5nX2lkIjo0LCJlbWFpbCI6Imh1QGdtYWlsLmNvbSIsIm1hdF9raGF1IjoiJDJiJDEwJGZncC9TTExZckVlTTZLVS94c2Ezd085V0NpREk4NGJEQ2F0UXM2dmxhVzJIUS5aVFNDVTR5IiwiaG9fdGVuIjoiTWVzc2kiLCJ0dW9pIjo1MCwiYW5oX2RhaV9kaWVuIjpudWxsLCJpYXQiOjE2ODQzMzkyOTMsImV4cCI6MTcxNTg3NTI5M30.O8Znxj9VcUogu9ow9aNG1pViVMt3HCwyascFTceXna4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ho_ten",
+							"value": "Mixi",
+							"type": "text"
+						},
+						{
+							"key": "tuoi",
+							"value": "19",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/ADMIN/Desktop/High-Low-The-Worst-X.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{domain}}/api/profile/edit-profile/5",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"api",
+						"profile",
+						"edit-profile",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8080"
+		}
+	]
+}
